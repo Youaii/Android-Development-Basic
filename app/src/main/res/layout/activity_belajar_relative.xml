@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarRelativeActivity">
+
+    <TextView
+        android:id="@+id/kiriAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Atas"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/kananAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Atas"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/tengahAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah Atas"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/kiriTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Tengah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tengahTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah Tengah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/kananTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Tengah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/kiriBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Bawah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/bawahTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Bawah Tengah"
+        android:textAllCaps="true"
+        android:textColor="#FF0000"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/kananBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Tengah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        />
+    <TextView
+        android:id="@+id/diatasTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muncul diatas Tengah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/tengahTengah"
+        />
+    <TextView
+        android:id="@+id/dibawahTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muncul dibawah Tengah"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tengahTengah"
+        />
+</RelativeLayout>

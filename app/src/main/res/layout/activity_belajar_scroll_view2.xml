@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarScrollViewActivity2">
+
+    <ImageView
+        android:id="@+id/ivbackground"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/boku"
+        android:scaleType="centerCrop"
+        />
+
+
+    <ImageView
+        android:id="@+id/ivBookpicture"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bokuthenkimi"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/tvBooktitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="To Every You I've Loved Before"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/ivBookpicture"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="20dp"
+
+        />
+    <TextView
+        android:id="@+id/tvAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J.K.Rowling"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/ivBookpicture"
+        android:layout_below="@id/tvBooktitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        />
+    <ImageView
+        android:id="@+id/tvstar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/baseline_star_rate_24"
+        android:layout_toRightOf="@+id/tvAuthor"
+        android:layout_below="@id/tvBooktitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+/>
+    <TextView
+        android:id="@+id/tvrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.9"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/tvBooktitle"
+        android:layout_toRightOf="@id/tvstar"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="145 Reviews"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/tvBooktitle"
+        android:layout_toRightOf="@id/tvrating"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tvgenre1"
+        android:layout_width="97dp"
+        app:cardCornerRadius="5dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/ivBookpicture"
+        android:backgroundTint="#ECECEC"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Romance"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="15sp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tvgenre2"
+        app:cardCornerRadius="5dp"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBookpicture"
+        android:backgroundTint="#ECECEC"
+     android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiction"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+    />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tvgenre3"
+        app:cardCornerRadius="5dp"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivBookpicture"
+        android:backgroundTint="#ECECEC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+      android:layout_toRightOf="@+id/tvgenre2"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sci-Fi"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+    />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tvsinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        android:layout_below="@id/tvgenre1"
+        />
+
+    <ScrollView
+        android:id="@+id/svsinopsys2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/tvsinopsis">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvsinopsi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sinopsis2"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginEnd="30dp"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tvreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/svsinopsys2"
+        android:textStyle="bold"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/tvreview"
+        android:layout_above="@+id/buton"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="20dp"
+
+                android:layout_marginStart="30dp"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kujor" />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silver Kuzor"
+                android:layout_toRightOf="@+id/card3"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am the most impressed with the 7th book"
+                android:layout_toRightOf="@+id/card3"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_below="@+id/card3"
+                android:layout_marginStart="30dp"
+                >
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/kujor"/>
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silver Kuzor"
+                android:layout_toRightOf="@+id/card3"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_below="@+id/card3"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I am the most impressed with the 7th book. It is by far the best in the collection of Harry Potter books, I love it and am disappointed at some of the deaths"
+                android:layout_toRightOf="@+id/card3"
+                android:layout_below="@+id/card3"
+                android:layout_marginTop="70dp"
+                android:layout_marginStart="20dp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+    <Button
+        android:id="@+id/buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Reading"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

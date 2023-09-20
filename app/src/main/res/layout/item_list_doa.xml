@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/primary_doa"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/ivgambarDoa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/doa_harian2"
+            android:layout_alignParentEnd="true"
+            />
+        <TextView
+            android:id="@+id/tvteksDoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dzikir doa dan Sholat sunnah"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginStart="15dp"
+            />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/judulFormulir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Formulir Peminjaman Buku"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/labelNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/inputNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama Anggota"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:id="@+id/labelKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kelas : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/inputKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kelas Anggota"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:id="@+id/labelKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kode Buku : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <EditText
+        android:id="@+id/inputKode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Kode Buku"
+        android:inputType="number"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Submit"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_700"
+        />
+
+    <TextView
+        android:id="@+id/tampilNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/tampilKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <TextView
+        android:id="@+id/tampilBuku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        />
+
+</LinearLayout>
